@@ -60,7 +60,7 @@ def get_data(collection, member):
     if collection in INFO:
         member = INFO[collection].get(member)
         if member:
-            res = make_response(jsonify({"res":member}), 200)
+            res = make_response(jsonify({"res":member}), 203)
             return res
 
         res = make_response(jsonify({"error": "Not found"}), 404)
