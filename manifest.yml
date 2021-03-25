@@ -1,0 +1,10 @@
+---
+applications:
+- name: testing
+  random-route: true
+  memory: 128M
+  disk_quota: 256MB
+  buildpacks: 
+  - python_buildpack
+  path: .
+  command: python app.py
